@@ -1,0 +1,27 @@
+{
+  "name"       : "api-baseline",
+  "version"    : "0.0.1",
+  "description": "Baseline API used in POCs and sandbox applications",
+  "main"       : "src/server.js",
+  "scripts"    : {
+    "dev"  : "dotenv -e .env -- nodemon ./src/server.js",
+    "start": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author"  : {
+    "email": "fred.lackey@gmail.com",
+    "name" : "Fred Lackey",
+    "url"  : "http://fredlackey.com"
+  },
+  "license"     : "Apache-2.0",
+  "dependencies": {
+    "cleaner-node": "^1.7.3",
+    "express"     : "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "dotenv-cli"  : "^8.0.0",
+    "nodemon"     : "^3.1.10"
+  }
+}

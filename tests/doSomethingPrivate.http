@@ -1,0 +1,5 @@
+###
+# @name doSomethingPrivate
+GET http://localhost:3000/api/do-private
+Content-Type: application/json
+x-api-token: CHANGE_ME

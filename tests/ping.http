@@ -1,0 +1,4 @@
+###
+# @name ping
+GET http://localhost:3000/ping
+Content-Type: application/json 

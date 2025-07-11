@@ -1,0 +1,27 @@
+version: '3.8'
+
+# For local development, create a .env file in the same directory as this
+# docker-compose.yml file and add values for the following environment variables:
+#
+# API_TOKEN=your_super_secret_api_token
+# JWT_SECRET=your_super_secret_jwt_secret
+#
+# You can use the following command to generate a secret:
+# openssl rand -hex 32
+#
+
+services:
+  api-baseline:
+    build: .
+    container_name: api-baseline
+    ports:
+      - "3000:3000"
+    environment:
+      # The internal port the application listens on. This must match the
+      # container port in the 'ports' mapping.
+      NODE_PORT: 3000
+    # The .env file provides the secrets needed by the application.
+    # The application will fail to start if this file is missing
+    # or if the variables are not defined.
+    env_file:
+      - .env 

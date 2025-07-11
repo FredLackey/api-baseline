@@ -1,0 +1,4 @@
+###
+# @name getStatus
+GET http://localhost:3000/status
+Content-Type: application/json 

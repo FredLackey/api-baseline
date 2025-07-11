@@ -1,0 +1,4 @@
+###
+# @name testAll
+GET http://localhost:3000/test/all
+Content-Type: application/json 
