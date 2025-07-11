@@ -1,9 +1,9 @@
 const reqToConsole = require('./req-to-console');
-const requireApiToken = require('./require-api-token');
+const requireApiKey = require('./require-api-key');
 const requireJwt = require('./require-jwt');
 
 module.exports = {
   reqToConsole,
-  requireApiToken,
+  requireApiKey,
   requireJwt
 }

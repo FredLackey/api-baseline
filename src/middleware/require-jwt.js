@@ -8,10 +8,14 @@ const requireJwt = (req, res, next) => {
   }
   // Verify token
   const token = bearerToken.split(' ')[1];
-  const decoded = jwt.verify(token, process.env.JWT_SECRET);
-  if (!decoded) {
+
+  let decoded;
+  try {
+    decoded = jwt.verify(token, process.env.JWT_SECRET);
+  } catch (error) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
+
   // Add decoded token to request
   req.session = {
     token: {

@@ -1,5 +1,5 @@
 ###
 # @name getSomethingPrivate
-GET http://localhost:3000/ux/get-private
+GET http://localhost:3000/ux/get-something-private
 Content-Type: application/json
-Authorization: Bearer {{JWT_TOKEN}} 
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.evyMByMMhQ6CPeFOjBXhRjeqazcPJL2Dh9XbBE2p2rI

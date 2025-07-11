@@ -1,5 +1,5 @@
 ###
 # @name doSomethingPrivate
-GET http://localhost:3000/api/do-private
+POST http://localhost:3000/api/do-something-private
 Content-Type: application/json
-x-api-token: CHANGE_ME
+x-api-key: CHANGE_ME

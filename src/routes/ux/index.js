@@ -1,13 +1,13 @@
 const router = require('express').Router();
 const m = require('../../middleware');
 
-const getSomethingPublic = require('./public/get-something-public');
-const getSomethingPrivate = require('./private/get-something-private');
+const uxPrivate = require('./private');
+const uxPublic = require('./public');
 
-router.get('/get-public', getSomethingPublic);
+router.use('/', uxPublic);
 
 router.use(m.requireJwt);
 
-router.get('/get-private', getSomethingPrivate);
+router.use('/', uxPrivate);
 
 module.exports = router;

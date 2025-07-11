@@ -1,14 +1,13 @@
 const router = require('express').Router();
 const m = require('../../middleware');
 
-const doSomethingPublic = require('./public/do-something-public');
-const doSomethingPrivate = require('./private/do-something-private');
+const apiPrivate = require('./private');
+const apiPublic = require('./public');
 
-router.get('/do-public', doSomethingPublic);
+router.use('/', apiPublic);
 
-router.use(m.requireApiToken);
+router.use(m.requireApiKey);
 
-router.get('/do-private', doSomethingPrivate);
-
+router.use('/', apiPrivate);
 
 module.exports = router;

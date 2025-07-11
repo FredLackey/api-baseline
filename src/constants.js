@@ -1,6 +1,6 @@
 const REQUIRED_ENV_STRINGS = [
   'NODE_ENV',
-  'API_TOKEN',
+  'API_KEY',
   'JWT_SECRET'
 ];
 const REQUIRED_ENV_NUMBERS = [

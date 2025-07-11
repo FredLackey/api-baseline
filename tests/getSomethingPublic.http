@@ -1,4 +1,4 @@
 ###
 # @name getSomethingPublic
-GET http://localhost:3000/ux/get-public
+GET http://localhost:3000/ux/get-something-public
 Content-Type: application/json 

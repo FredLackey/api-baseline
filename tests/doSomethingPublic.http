@@ -1,4 +1,4 @@
 ###
 # @name doSomethingPublic
-GET http://localhost:3000/api/do-public
+POST http://localhost:3000/api/do-something-public
 Content-Type: application/json 
